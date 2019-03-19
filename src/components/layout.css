@@ -1,0 +1,266 @@
+/* BASIC STYLES */
+body {
+  font: normal 16px/1.25 Montserrat, sans-serif;
+  color: #2D3142;
+}
+
+a:link,
+a:active,
+a:visited {
+  color: #3C91E6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF4C3F;
+}
+
+/* CONTAINER STYLES */
+.container {
+  width: 300px;
+  margin: 0 auto;
+  display: grid;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 640px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 980px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* HEADER */
+.header {
+  padding: 1.2rem 0;
+  font-size: 1.1rem;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  border: 3px solid;
+  padding: .3rem;
+}
+
+.logo:hover {
+  background-color: #FF4C3F;
+  color: #fff;
+  border: 3px solid #FF4C3F;
+}
+
+.main-nav-link {
+  padding: 0 1.2rem;
+}
+
+.main-nav-link-bubble {
+  border: 3px solid #3C91E6;
+  color: #3C91E6;
+  padding: .2rem 1.2rem;
+  display: inline-block;
+}
+
+.main-nav-link-bubble:hover {
+  border: 3px solid #FF4C3F;
+  background-color: #FF4C3F;
+  color: #fff;
+}
+
+/* ABOUT STYLES */
+.main-intro {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  margin: 1.25rem 0;
+}
+
+.main-bio-icon {
+  width: 50px;
+  margin: 0 auto 50px;
+  display: block;
+}
+
+.main-bio {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-bio::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  position: absolute;
+  transform: skewY(-3deg);
+  transform-origin: 0;
+  background-color: #3C91E6;
+}
+
+.main-bio-content {
+  padding: 4rem 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.main-bio-title {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.main-bio-description {
+  padding-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.main-bio-tech {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 2%;
+}
+
+.main-bio-tech-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3C91E6;
+}
+
+.main-bio-tech-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-bio-tech-list-item {
+  padding: 0;
+  margin: 0;
+}
+
+.main-bio-tech-col {
+  background-color: #fff;
+  padding: 4rem;
+  box-shadow: 0 3px 5px 0px rgba(240, 240, 240, .5);
+  border-radius: 8px;
+}
+
+/* WORK STYLES */
+.main-work {
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.main-work-title {
+  font-size: 2rem;
+}
+
+.main-work-btn {
+  border: 3px solid #3C91E6;
+  font-weight: bold;
+  padding: .3rem 1rem;
+}
+
+.main-work-btn:hover {
+  border: 3px solid #FF4C3F;
+}
+
+/* TESTIMONIAL STYLES */
+.main-testimonials {
+  text-align: center;
+  background-color: #EFEFEF;
+  padding: 4rem 0;
+}
+
+.main-testimonials-title {
+  font-size: 2rem;
+}
+
+.main-testimonials-img {
+  margin: 2rem auto;
+  border-radius: 100%;
+}
+
+.main-testimonials-blockquote {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.main-testimonials-cite {
+  margin-top: 2rem;
+  color: #666;
+}
+
+/* COMPANY STYLES */
+.main-companies-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.25rem 0;
+}
+
+.main-companies-grid {
+  grid-template-areas: "1fr 1fr 1fr";
+  grid-column-gap: 25%;
+  grid-row-gap: 10%;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  max-width: 800px;
+}
+
+.main-company-img {
+  max-width: 100%;
+}
+
+/* FOOTER STYLES */
+.footer {
+  background-color: #3C91E6;
+  color: #fff;
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 2rem;
+  margin: 1.25rem 0;
+}
+
+.footer-nav {
+  grid-template-areas: "1fr 1fr 1fr 1fr";
+  grid-column-gap: 10%;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  max-width: 600px;
+}
+
+.footer-nav-icon {
+  max-width: 2rem;
+}
+
+.credit,
+.copyright {
+  font-size: .8rem;
+}
