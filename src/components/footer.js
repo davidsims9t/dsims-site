@@ -4,7 +4,7 @@ const Footer = () => (
     <footer id="contact" className="footer" role="footer">
         <h3 className="footer-title">Get In Touch</h3>
         <div id="notice" className="notice">Thank you for contacting me! I'll be in touch soon.</div>
-        <form id="contact-form" className="form container" name="contact" method="POST" data-netlify="true">
+        <form id="contact-form" className="form container" name="contact" action="/" method="POST" data-netlify="true">
             <div className="form-row">
                 <label className="form-label name-label">
                     Your Name:
