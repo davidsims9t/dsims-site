@@ -14,7 +14,7 @@ const Header = ({ siteTitle, logo, menuLinks = [] }) => (
     </Link>
     <nav id="mainNav" className="main-nav" role="navigation" aria-label="Primary Navigation">
       {menuLinks.map(menuLink => {
-        if (menuLink.link.startsWith('mailto')) {
+        if (menuLink.link.startsWith('#contact')) {
           return (
             <a className="main-nav-link-bubble" href={menuLink.link} key={menuLink.link}>{menuLink.name}</a>
           );

@@ -1,9 +1,10 @@
 import React from "react"
 
 const Footer = () => (
-    <footer id="footer" id="contact" className="footer" role="footer">
+    <footer id="contact" className="footer" role="footer">
         <h3 className="footer-title">Get In Touch</h3>
-        <form className="form container" name="contact" method="POST" data-netlify="true">
+        <div id="notice" className="notice">Thank you for contacting me! I'll be in touch soon.</div>
+        <form id="contact-form" className="form container" name="contact" method="POST" data-netlify="true">
             <div className="form-row">
                 <label className="form-label name-label">
                     Your Name:

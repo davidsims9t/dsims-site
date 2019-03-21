@@ -19,7 +19,7 @@ module.exports = {
       // },
       {
         name: 'Contact',
-        link: 'mailto:davidsims15@gmail.com'
+        link: '#contact'
       },
     ]
   },

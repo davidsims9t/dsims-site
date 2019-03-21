@@ -319,6 +319,13 @@ a:hover {
   max-width: 2rem;
 }
 
+.notice {
+  display: none;
+  color: #fff;
+  margin: 1rem 0;
+  text-align: center;
+}
+
 .credit {
   font-size: .8rem;
   text-align: center;
