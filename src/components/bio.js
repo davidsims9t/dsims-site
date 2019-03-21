@@ -1,9 +1,9 @@
 import React from "react"
 
 const Bio = () => (
-    <section className="main-bio">
+    <section className="main-bio" id="about">
       <div className="main-bio-content">
-        <h2 className="main-bio-title">A Little Bit About Me</h2>
+        <h2 className="main-bio-title container">A Little Bit About Me</h2>
         <div className="main-bio-description container">
           <p>
             I began coding at the age of fifteen.

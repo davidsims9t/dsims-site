@@ -67,14 +67,28 @@ a:hover {
 }
 
 .main-nav-link {
+  display: none;
   padding: 0 1.2rem;
+}
+
+@media (min-width: 480px) {
+  .main-nav-link {
+    display: inline-block;
+  }
 }
 
 .main-nav-link-bubble {
   border: 3px solid #3C91E6;
   color: #3C91E6;
-  padding: .2rem 1.2rem;
+  padding: .2rem .6rem;
+  margin: 0 .6rem;
   display: inline-block;
+}
+
+@media (min-width: 480px) {
+  .main-nav-link-bubble {
+    padding: .2rem 1.2rem;
+  }
 }
 
 .main-nav-link-bubble:hover {
@@ -138,9 +152,16 @@ a:hover {
 }
 
 .main-bio-tech {
-  grid-auto-flow: column;
+  grid-auto-flow: row;
   grid-auto-columns: 1fr;
   grid-column-gap: 2%;
+  grid-row-gap: 2%;
+}
+
+@media (min-width: 960px) {
+  .main-bio-tech {
+    grid-auto-flow: column;
+  }
 }
 
 .main-bio-tech-subtitle {
@@ -240,12 +261,50 @@ a:hover {
   background-color: #3C91E6;
   color: #fff;
   padding: 8rem 0;
+}
+
+.form {
+  max-width: 600px;
+}
+
+.form-row {
+  display: block;
+  margin: 1rem 0;
+}
+
+.form-field {
+  display: block;
+  padding: .5rem .8rem;
+  border: 3px solid #FFF;
+  margin-top: .5rem;
+}
+
+@media (min-width: 480px) {
+  .form-field {
+    width: 100%;
+  }
+}
+
+.msg-field {
+  min-height: 100px;
+}
+
+.send-btn {
+  border: 3px solid #FFF;
+  background-color: transparent;
+  padding: .5rem 1rem;
+  color: #FFF;
   text-align: center;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
 }
 
 .footer-title {
   font-size: 2rem;
   margin: 1.25rem 0;
+  text-align: center;
 }
 
 .footer-nav {
@@ -260,7 +319,8 @@ a:hover {
   max-width: 2rem;
 }
 
-.credit,
-.copyright {
+.credit {
   font-size: .8rem;
+  text-align: center;
+  display: block;
 }

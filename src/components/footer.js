@@ -1,8 +1,31 @@
 import React from "react"
 
 const Footer = () => (
-    <footer id="footer" className="footer" role="footer">
+    <footer id="footer" id="contact" className="footer" role="footer">
         <h3 className="footer-title">Get In Touch</h3>
+        <form className="form container" name="contact" method="POST" data-netlify="true">
+            <div className="form-row">
+                <label className="form-label name-label">
+                    Your Name:
+                    <input type="text" name="name" className="form-field name-field" />
+                </label>   
+            </div>
+            <div className="form-row">
+                <label className="form-label email-label">
+                    Your Email:
+                    <input type="email" name="email" className="form-field email-field" />
+                </label>
+            </div>
+            <div className="form-row">
+                <label className="form-label msg-label">
+                    Message:
+                    <textarea name="message" className="form-field msg-field"></textarea>
+                </label>
+            </div>
+            <div className="form-row">
+                <button type="submit" className="send-btn">Send</button>
+            </div>
+        </form>
         <nav className="footer-nav container">
             <a className="footer-nav-link" href="https://twitter.com/dsims90" target="_blank" rel="noopener noreferrer">
                 <img className="footer-nav-icon" src={require('../images/twitter.svg')} alt="Twitter" />
@@ -17,11 +40,8 @@ const Footer = () => (
                 <img className="footer-nav-icon" src={require('../images/behance.svg')} alt="Behance" />
             </a>
         </nav>
-        <div className="credit">
+        <small className="credit">
             Icons made by Smashicons from www.flaticon.com 
-        </div>
-        <small className="copyright">
-            &copy; David Sims {(new Date()).getFullYear()}
         </small>
     </footer>
 )
