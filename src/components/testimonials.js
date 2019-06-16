@@ -3,7 +3,7 @@ import React from "react"
 const Testimonials = () => (
     <section className="main-testimonials">
       <h2 className="main-testimonials-title">What My Colleagues Say About Me</h2>
-      <img className="main-testimonials-img" src="https://media.licdn.com/dms/image/C5603AQH6_42MfV_6wg/profile-displayphoto-shrink_800_800/0?e=1558569600&v=beta&t=1ivGkOPsRssP76o5KYvqoLQM62kXjpSBqIsU9GS49jE" alt="Mohammed Hussein" />
+      <img className="main-testimonials-img" src={require('../images/moe.jpeg')} alt="Mohammed Hussein" />
       <blockquote className="main-testimonials-blockquote container">
         <q className="main-testimonials-quote">
           David is an amazing engineer with a passion for front end development and deep knowledge about different platforms and programming languages.
