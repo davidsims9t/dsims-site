@@ -16,11 +16,10 @@ import Footer from "~/components/footer.vue"
 export default defineComponent({
   components: {
     NavBar,
-    Footer
+    Footer,
   }
 })
 </script>
-
 
 <style>
 @import '~/assets/normalize.css';

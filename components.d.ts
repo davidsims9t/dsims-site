@@ -14,6 +14,7 @@ declare module '@vue/runtime-core' {
     FrameworkLink: typeof import('./src/components/FrameworkLink.vue')['default']
     Header: typeof import('./src/components/header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    Hero: typeof import('./src/components/hero.vue')['default']
     Island: typeof import('./node_modules/.pnpm/iles@0.8.4/node_modules/iles/dist/client/app/components/Island.vue')['default']
     Navbar: typeof import('./src/components/navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
