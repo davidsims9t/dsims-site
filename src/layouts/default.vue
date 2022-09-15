@@ -25,4 +25,5 @@ export default defineComponent({
 @import '~/assets/normalize.css';
 @import '~/assets/fonts.css';
 @import '~/assets/base.css';
+@import '~/assets/grid.css';
 </style>

@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <div class="footer__container">
+        <div class="footer__container container">
             &copy; David Sims 2022
         </div>
     </footer>
@@ -25,8 +25,6 @@ export default defineComponent({
 }
 
 .footer__container {
-    max-width: 1290px;
-    margin: 0 auto;
     padding: 1.25rem 1rem;
 }
 </style>

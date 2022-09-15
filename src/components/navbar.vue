@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <div class="header__container">
+        <div class="header__container container">
             <div class="logo">
                 <router-link to="/">David Sims</router-link>
             </div>
@@ -42,8 +42,6 @@ export default defineComponent({
     grid-template-areas: "logo" "nav";
     grid-template-columns: auto auto;
     justify-content: space-between;
-    max-width: 1280px;
-    margin: 0 auto;
     padding: .5rem 1rem;
 }
 

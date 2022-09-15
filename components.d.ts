@@ -12,6 +12,8 @@ declare module '@vue/runtime-core' {
     EcosystemIcon: typeof import('./src/components/icons/EcosystemIcon.vue')['default']
     Footer: typeof import('./src/components/footer.vue')['default']
     FrameworkLink: typeof import('./src/components/FrameworkLink.vue')['default']
+    Grid: typeof import('./src/components/grid.vue')['default']
+    GridItem: typeof import('./src/components/grid-item.vue')['default']
     Header: typeof import('./src/components/header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Hero: typeof import('./src/components/hero.vue')['default']
