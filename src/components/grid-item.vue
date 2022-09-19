@@ -1,7 +1,13 @@
 <template>
-    <router-link :to="to" class="grid-item">
+    <a v-if="to?.startsWith('https:')" :class="{'grid-item':!noStyles}" :href="to" target="_blank" rel="noopener">
+        <slot />
+    </a>
+    <router-link v-else-if="to" :to="to" :class="{'grid-item':!noStyles}">
         <slot />
     </router-link>
+    <div :class="{'grid-item':!noStyles}" v-else>
+        <slot />
+    </div>
 </template>
 
 <script>
@@ -11,6 +17,10 @@ export default defineComponent({
     props: {
         to: {
             type: String,
+        },
+        noStyles: {
+            type: Boolean,
+            default: false
         }
     },
     setup() {

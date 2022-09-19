@@ -6,7 +6,12 @@
             </div>
             <nav class="nav">
                 <router-link to="/backpacking">Backpacking</router-link>
-                <router-link to="/traveling">Traveling</router-link>
+                <router-link to="/traveling">Travel</router-link>
+                <router-link to="/gear">Gear</router-link>
+                <router-link to="/mountain-biking">Mountain Biking</router-link>
+                <router-link to="/day-hikes">Day Hikes</router-link>
+                <router-link to="/recipes">Recipes</router-link>
+                <router-link to="/workouts">Workouts</router-link>
             </nav>
         </div>
     </header>
